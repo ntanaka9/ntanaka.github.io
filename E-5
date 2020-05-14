@@ -1,0 +1,33 @@
+---
+layout: essay
+type: essay
+title: "E5: Checkpoint Assignment 3"
+# All dates must be YYYY-MM-DD format!
+date: 2020-05-13
+labels:
+  - E5
+---
+
+<p>Checkpoint A:</p>
+<p>My shopping cart is integrated into the products page. When you input the quantities in the products textbox and hit purchase, it will save the quantities to that page and then you will click on the Check Out nagivation button at the top of the page to view the invoice.</p>
+
+<p>Checkpoint B:</p>
+<p>The cart will be using the users session to store their data and calculate the quantities of items they chose to the invoice. The code for this is:   
+<br>var str= `<script>sessionStorage.cart = '${JSON.stringify(request.session)}';`;
+   console.log(str);
+    str+="window.location.href='invoice.html';</script>"; 
+    response.send(str);
+    </br>
+});</p>
+
+<p>Checkpoint C:</p>
+<p>Users will need to log in before they input the quantities they want to purchase. We must make sure that hackers can't see the users log in information.  When a user is in their session, no one can use that same session, they will have their own session.</p>
+
+<p>Checkpoint D:</p>
+<p>When a user is logged in, there will be a pop up that shows "Hello [username]!</p>
+
+<p>Checkpoint E:</p>
+<p>Working with no partner.</p>
+
+<p>Checkpoint F:</p>
+<p>For this assignment it doesn't take as much code as you think.  There are easy ways to generate a shopping cart and you don't have to create a whole new page for it. We also had to add a navigation bar so users could go to the other products page easily.</p>
